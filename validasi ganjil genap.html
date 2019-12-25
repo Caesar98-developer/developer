@@ -1,0 +1,41 @@
+<head>
+
+      <title>Menentukan Bilangan Genap dan Ganjil</title>
+
+      </head>
+
+      <script>
+      function cek() {
+      var val =  Number(document.myform.nilai.value)
+      var result = " ";
+      
+      if (val % 2 == 0) {
+      result = "Bilangan Genap";
+      alert(val+ "  " +result);
+      }
+      else {
+      result = "Bilangan Ganjil";
+      alert(val+ "  " +result)
+      }
+      
+    }
+
+</script>
+
+<body>
+
+<form name="myform">
+
+<h2>Cek Bilangan Genap Atau Ganjil</h2>
+
+Masukkan Bilangan :<input type="text" size=11 name="nilai">
+
+<input type="button" value="Cek" onclick="cek()" />
+
+<input type="reset" value="Reset" />
+
+</form>
+
+</body>
+
+</html>

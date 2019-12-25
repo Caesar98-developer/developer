@@ -1,0 +1,28 @@
+<form name="form">
+  Angka1
+  <input type="number" name="angka1" size=3><br><br>
+  Angka2
+  <input type="number" name="angka2" size="3" /><br>
+  <br>
+  <input type=button name=submit onclick="kali()" value="HASIL">
+  <br>
+  <br>
+  Hasil <input type="text" value="" name="total" size="9">
+  <br><br>
+  <!-- membuat event ketika tombol di klik maka memanggil function javascript -->
+  
+  </form>
+  </body>
+  </html>
+  <script>
+  
+  function kali() {
+  a=Number(form.angka1.value);
+  b=Number(form.angka2.value);
+  
+  
+  c=a*b;
+  form.total.value = c;
+  }
+
+  </script>
